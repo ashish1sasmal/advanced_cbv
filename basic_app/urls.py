@@ -11,6 +11,7 @@ urlpatterns = [
 	#r'^(?P<pk>[-\w]+)/$'
     path('<int:pk>/',views.SchoolDetailView.as_view(),name='details'),
     path('create/',views.SchoolCreateView.as_view(),name='create'),
-    re_path(r'^update/(?P<pk>\d+)/$',views.SchoolUpdateView.as_view(),name='update'),
+    path('update/<int:pk>/',views.SchoolUpdateView.as_view(),name='update'),
+    path('delete/<int:pk>/',views.SchoolDeleteView.as_view(),name='delete'),
 
 ]
