@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title></title>
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-static-top">
+		<ul class="nav navbar-nav">
+			<li><a href="{% url 'basic_app:list' %}" class="navbar-brand"></a>Schools</li>
+			<li><a href="{% url 'admin:index' %}" class="navbar-link"></a></li>
+		</ul>
+	</nav>
+
+	{% block content %}{% endblock content %}
+</body>
+</html>

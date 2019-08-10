@@ -1,0 +1,14 @@
+{% extends 'basic_app/basic_app_base.html' %}
+{% block content %}
+	<div class="jumbotron">
+		<h1>Schools DEtails</h1>
+		<p>Name: {{ details.name }}</p>
+		<p>Principal : {{ details.principal }}</p>
+		<p>LOcation : {{ details.location }}</p>
+		<h3>Students : </h3>
+		{% for student in details.students.all %}
+		<p>{{student.name}} who is {{student.age}} year old.</p>
+		{% endfor %}
+	</div>
+
+{% endblock content %}
