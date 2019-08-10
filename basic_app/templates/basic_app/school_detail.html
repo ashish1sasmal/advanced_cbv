@@ -11,4 +11,7 @@
 		{% endfor %}
 	</div>
 
+	<div>
+		<p><a href="{% url 'basic_app:update' pk=details.pk %}">Update</a></p>
+	</div>
 {% endblock content %}
